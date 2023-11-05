@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2c05c3549a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- header section  -->
+     <div class="header">
+        <div class="back">
+            <img src="images/background.png" alt="">
+        </div>
+        <div class="navbar">
+            <img src="images/logo.png" alt="">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <p>UI/UX Designer</p>
+            <h1>Hi I'm <span>Faisal</span> Raz <br> From Pakistan. <br> And I am A <br> 
+                Web Developer.</h1>
+        </div>
+     </div>
+      <br>
+      <hr>
+
+     <!-- About us section  -->
+     <div id="about">
+        <img src="images/user.png" alt="">
+        <div class="about-me">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque  <br>
+               quam repellat voluptatem autem? Deleniti nihil facilis iusto, ducimus<br>
+               possimus maiores! Ea officiis quisquam, non vero, exercitationem <br>
+               voluptate incidunt fuga aperiam saepe ut sequi tempora.</p>
+        </div>
+        <div class="skill">
+            <ul>
+                <li onclick="opentab('Skills')" class="skill-link active-link">Skills</li>
+                <li onclick="opentab('Experiance')" class="skill-link">Experiance</li>
+                <li onclick="opentab('Education')" class="skill-link">Education</li>
+            </ul>
+        </div>
+        <div class="about-skill active-tab" id="Skills">
+           <ul>
+              <li><span>UI/UX </span><br>Designing Web & Apps Interfaces</li>
+              <li><span>Web Development</span><br>Web Apps Development</li>
+              <li><span>App Development</span><br>Android Apps Development</li>
+           </ul>
+        </div>
+        <div class="about-skill current" id="Experiance">
+            <ul>
+                <li><span>2023-Current</span><br>UI/UX Traning at ET Institute</li>
+                <li><span>2021-2023</span><br>Team Lead at Star App LLC</li>
+                <li><span>2019-2021</span><br>UI/UX Design Executive at Coin Digital Ltd</li>
+                <li><span>2016-2019</span><br>Intership at ekart E-Commerce</li>
+            </ul>
+        </div>
+        <div class="about-skill lahore" id="Education">
+           <ul>
+              <li><span>2023</span><br>UI/UX Traning at ET Institute</li>
+              <li><span>2022</span><br>Matric From G.S Lahore</li>
+              <li><span>2023</span><br>Fsc From S.C Lahore</li>
+           </ul>
+        </div>
+     </div>
+
+
+     <!-- services section -->
+     <div id="services">
+        <div class="my">
+            <h1>My Services</h1>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-code"></i>
+            <h1>Web Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+               elit.Ipsum aperiam pariatur iure porro architecto <br>
+               numquam repellat explicabo excepturi, doloribus <br>
+               voluptas quia cupiditate expedita ducimus.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-crop-simple"></i>
+            <h1>UI/UX Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+               elit.Ipsum aperiam pariatur iure porro architecto <br>
+               numquam repellat explicabo excepturi, doloribus <br>
+               voluptas quia cupiditate expedita ducimus.</p>
+               <a href="#">Learn More</a>
+        </div>
+        <div class="card">
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h1>App Design</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>
+               elit.Ipsum aperiam pariatur iure porro architecto <br>
+               numquam repellat explicabo excepturi, doloribus <br>
+               voluptas quia cupiditate expedita ducimus.</p>
+               <a href="#">Learn More</a>
+        </div>
+        
+     </div>
+
+
+     <!-- Portfolio section  -->
+
+     <div id="portfolio">
+         <div class="work">
+            <h1>My Work</h1>
+         </div>
+         <div class="img">
+            <img src="images/work-1.png" alt="">
+            <div class="layer">
+                <h3>Social Media Apps</h3>
+                <p> Lorem ipsum dolor sit amet consectetur <br>
+                    adipisicing Nemo hic aliquam <br>
+                    consectetur aut facilis eum neque <br>
+                    delectus! Ab, sint?
+                </p>
+                <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+         </div>
+         <div class="img">
+            <img src="images/work-2.png" alt="">
+            <div class="layer">
+                <h3>Music App</h3>
+                <p> Lorem ipsum dolor sit amet consectetur <br>
+                    adipisicing Nemo hic aliquam <br>
+                    consectetur aut facilis eum neque <br>
+                    delectus! Ab, sint?
+                </p>
+                <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+         </div>
+         <div class="img">
+            <img src="images/work-3.png" alt="">
+            <div class="layer">
+                <h3>Shopping App</h3>
+                <p>Lorem ipsum dolor sit amet consectetur <br>
+                   adipisicing Nemo hic aliquam <br>
+                   consectetur aut facilis eum neque <br>
+                   delectus! Ab, sint?
+                </p>
+                <a href="#"> <i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+         </div>
+         <a href="#" class="btn"><button id="btn">See More</button></a>
+     </div>
+
+
+     <!-- contact us -->
+     <div id="contact">
+        <div class="me">
+            <h1>Contact Me</h1>
+            <div class="num">
+                <i class="fa-brands fa-telegram"></i>
+                <p>Contact@example.com</p>
+                <i class="fa-solid fa-phone"></i>
+                <p>764621466865</p>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" class="cv" download=""><button>Download CV</button></a>
+        </div>
+        <div class="message">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="E-Mail" placeholder="Your E-Mail" required>
+                <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                <button type="submit" class="cv cv2">Sumbit</button>
+            </form>
+        </div>
+        <div class="copy">
+            <p>Copyright © Kevin.Made With <i class="fa-solid fa-heart"></i> by Faisal Raza</p>
+        </div>
+     </div>
+
+    <script async src="script.js"></script>
+    <script>
+        const scriptURL = `https://script.google.com/macros/s/
+         AKfycbyNpdPAL5_ioQhEQ2E6JC4P9jCw3cxuysr_JkpzG2vy2-mjFKwe49Shu5magzawuGRq/exec`
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

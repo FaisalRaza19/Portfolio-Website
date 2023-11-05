@@ -1,0 +1,397 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.header .back{
+    display: flex;
+    position: fixed;
+}
+.header .back img{
+    width: 100%;
+    height: 100%;
+}
+.header .navbar{
+    display: flex;
+    position: absolute;
+}
+.header .navbar img{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    margin: 2em 9em;
+}
+.header .navbar ul{
+    display: flex;
+    position: relative;
+    float: right;
+    margin: 3.6em 110%;
+}
+.header .navbar ul li{
+    list-style: none;
+    margin: 0 25px;  
+}
+.header .navbar ul li a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.header .navbar ul li a::after{
+    content: '';
+    display: flex;
+    position: relative;
+    width: 0;
+    height: 3px;
+    top: 2px;
+    background-color: rgb(247, 51, 83);
+    transition: 0.5s;
+}
+.header .navbar ul li a:hover:after{
+    width: 100%;
+}
+.text{
+    display: grid;
+    position: absolute;
+    color: #fff;
+    margin: 16em 9.5em;
+}
+.text p{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.text h1{
+    font-size: 44px;
+    letter-spacing: 2px;
+    line-height: 48px;
+}
+.text h1 span{
+    color: rgb(252, 40, 75);
+}
+#home{
+    color: rgb(250, 45, 79);
+}
+#about{
+    display: flex;
+    position: absolute;
+    margin: 45em 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+#about img{
+    width: 400px;
+    height: 500px;
+    margin: 7em 8em;
+    border-radius: 20px;
+}
+.about-me{
+     margin: 6em -4em;
+}
+.about-me h1{
+    font-size: 44px;
+}
+.about-me p{
+    font-size: 17px;
+}
+.skill{
+    display: flex;
+    position: absolute;
+    margin: 19em 32em;
+}
+.skill ul{
+     display: flex;
+     position: relative;
+}
+.skill ul li{
+    list-style: none;
+    float: left;
+    margin: 0 40px;
+    cursor: pointer;
+}
+.skill ul li::after{
+    content: '';
+    display: flex;
+    position: relative;
+    width: 0;
+    height: 3px;
+    background-color: rgb(254, 37, 73);
+    transition: 0.5s;
+    top: 3px;
+}
+.skill ul li:hover::after{
+    width: 100%;
+}
+.skill .active-link::after{
+    width: 50%;
+}
+.about-skill{
+    display: none;
+    position: relative;
+}
+.about-skill ul{
+    margin: 23em -30.7em;
+}
+.about-skill ul li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.about-skill ul li span{
+    color: rgb(252, 38, 73);
+}
+.current ul{
+    margin: 23em -23.6em;
+}
+.lahore ul{
+    margin: 23em -13.5em;
+}
+.active-tab{
+    display: flex;
+}
+#services{
+    display: flex;
+    position: absolute;
+    margin: 90.2em 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+.my h1{
+    display: grid;
+    position: absolute;
+    margin: 1em 13.4em;
+    font-size: 45px;
+}
+.card{
+    display: inline-block;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.395);
+    width: 490px;
+    height: 350px;
+    margin: 14em 2.5em;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.card i{
+    display: flex;
+    position: absolute;
+}
+.card i{
+    font-size: 40px;
+    margin: 20px 20px;
+}
+ .card h1{
+    margin: 2.8em 20px;
+ }
+ .card p{
+    display: flex;
+    position: absolute;
+    margin: -3em 20px;
+    line-height: 27px;
+ }
+ .card a{
+    display: flex;
+    position: absolute;
+    margin: 5em 1.5em;
+    text-decoration: none;
+    color: #fff;
+ }
+ .card:hover{
+    background-color: rgb(252, 33, 70);
+    transition: 0.5s;
+    transform: translateY(-20px);
+ }
+#portfolio{
+    display: flex;
+    position: absolute;
+    margin: 137em 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+.work h1{
+    display: flex;
+    position: absolute;
+    font-size: 45px;
+    margin: 35px 14em;
+}
+.img{
+    display: inline-block;
+    position: relative;
+    margin: 13em 3.6em;
+    cursor: pointer;
+}
+.img img{
+    width: 380px;
+    height: 400px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.img .layer{
+    width: 0;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.9),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: -20px;
+    bottom: -85px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    text-decoration: none;
+    color: #ff004f;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    font-size: 16px;
+}
+.img:hover img{
+    transform: scale(1.1);
+}
+.img:hover .layer{
+    width: 420px;
+    height: 450px;
+}
+#btn{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 21px;
+    background: transparent;
+    color: #fff;
+    height: 50px;
+    width: 170px;
+    border: 2px solid #ff004f;
+}
+.btn{
+    margin: 41em -51em;
+}
+#btn:hover{
+   background: #ff004f;
+   transition: 0.5s;
+}
+#contact{
+    display: flex;
+    position: absolute;
+    margin: 183.9em 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+.me{
+    display: grid;
+    position: relative;
+    margin: 11em 9em;
+}
+.me h1{
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.me .num{
+    display: grid;
+    position: relative;
+    margin: -4em 0;
+    margin-bottom: 20px;
+}
+.me .num i{
+    font-size: 30px;
+    color: #ff004f;
+}
+.me .num p{
+    margin: -2em 3em;
+}
+.me .icons{
+    display: inline-block;
+    position: relative;
+}
+.me .icons a{
+    text-decoration: none;
+    color: #ffffffb7;
+}
+.me .icons a i{
+    font-size: 25px;
+    margin: 0 7px;
+}
+.me .icons a i:hover{
+    color: #ff004f;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+button{
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    width: 170px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    background: #ff004f;
+    border: 2px solid #ff004f;
+    color: #fff;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.message{
+    display: flex;
+    position: relative;
+    margin: 12.6em 7em;
+}
+form input, form textarea{
+    width: 600px;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copy{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+    width: 100%;
+    margin: 44em 0;
+}
+.copy p i{
+    color: #ff004f;
+}
